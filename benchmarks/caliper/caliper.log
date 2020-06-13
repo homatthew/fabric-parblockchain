@@ -1,0 +1,5 @@
+2020.06.07-14:29:48.034[90m debug[39m [caliper] [blockchain] 	Constructed a winston logger with the specified settings
+2020.06.07-14:29:48.329[33m warn [39m [caliper] [bind] 	Working directory for binding not specified. Using "/Users/matthew/Documents/research/caliper"
+2020.06.07-14:29:48.331[32m info [39m [caliper] [bind] 	Binding for fabric@2.1.0. This might take some time...
+2020.06.07-14:29:48.331[32m info [39m [caliper] [bind] 	Binding working directory: /Users/matthew/Documents/research/caliper
+2020.06.07-14:29:48.331[32m info [39m [caliper] [bind] 	Calling npm with: install fabric-common@2.1.0 fabric-protos@2.1.0 fabric-network@2.1.0 fabric-ca-client@2.1.0

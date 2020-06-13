@@ -1,0 +1,201 @@
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+caliper:
+    # Settings related to the binding command
+    bind:
+        # The binding specification of the SUT in the <SUT type>:<SDK version> format
+        sut:
+        # The CWD to use for the binding (i.e., npm install) command
+        cwd:
+        # The additional args to pass to the binding (i.e., npm install) command
+        args:
+        # The file to use when binding (replace supported defaults)
+        file:
+    # Report file-related options
+    report:
+        # The absolute or workspace-relative path of the report file.
+        path: 'report.html'
+        # The options to pass to fs.writeFile
+        options:
+            flag: 'w'
+            mode: 0666
+        # Precision (significant figures) for the report output
+        precision: 3
+        # Charting options
+        charting:
+            hue: 21
+            scheme: 'triade'
+            transparency: 0.6
+    # Workspace directory that contains all configuration information
+    workspace: './'
+    # The file path for the project-level configuration file. Can be relative to the workspace.
+    projectconfig:
+    # The file path for the user-level configuration file. Can be relative to the workspace.
+    userconfig:
+    # The file path for the user-level configuration file. Can be relative to the workspace.
+    machineconfig:
+    # Path to the benchmark workload file that describes the test client(s), test rounds and monitor
+    benchconfig:
+    # Path to the blockchain configuration file that contains information required to interact with the SUT
+    networkconfig:
+    # Sets the frequency of the progress reports in milliseconds
+    txupdatetime: 5000
+    # Configurations related to the logging mechanism
+    logging:
+        # Specifies the message structure through placeholders
+        template: '%timestamp%%level%%label%%module%%message%%metadata%'
+        # Enables the different formats to apply to the log messages FOR ALL transports
+        # Each format can be disabled by setting it to false
+        formats:
+            # Adds a timestamp to the messages with the following format
+            timestamp: 'YYYY.MM.DD-HH:mm:ss.SSS'
+            # Adds a specified label to every message. Useful for distributed client scenario
+            label: caliper
+            # serializes the log messages as JSON
+            json: false
+            # pads the levels to be the same length
+            pad: true
+            # adds a tab delimiter before the message to align it in the same place
+            align: true
+            # specifies formatting strings for different log message attributes
+            attributeformat:
+                # add a space before the level
+                level: ' %attribute%'
+                # put [] around the label and space before it
+                label: ' [%attribute%]'
+                # put [] around the module name and space before/after it
+                module: ' [%attribute%] '
+                # put () around the metadata and space before it
+                metadata: ' (%attribute%)'
+            # defines coloring for the different levels for each (or all) message property
+            colorize:
+                # Apply it to levels
+                level: true
+                # Apply it to messages
+                message: false
+                # The colors for each level
+                colors:
+                    info: green
+                    error: red
+                    warn: yellow
+                    debug: grey
+        # Lists the targets (winston transports)
+        targets:
+            console:
+                target: console # Defines a console target
+                enabled: true # Enables the target
+                options: # These are passed to the winston console target as-is
+                    level: info
+            # Defines a target with debug level
+            file:
+                target: file
+                enabled: true
+                options:
+                    level: debug
+                    filename: caliper.log
+                    maxSize: 5m
+                    zippedArchive: false
+                    options:
+                        flags: a
+                        mode: 0666
+    # Worker options
+    worker:
+        # Indicate if workers are in distributed mode
+        remote: false
+        # Polling interval to use once created, in milliseconds
+        pollinterval: 5000
+        # Worker communication details
+        communication:
+            # Method used (process | mqtt)
+            method: process
+            # Address used for mqtt communications
+            address: mqtt://localhost:1883
+        maxtxpromises: 100
+    # Caliper flow options
+    flow:
+        # Skip options
+        skip:
+            # Indicates whether to skip the start command script in the network configuration file, if provided
+            start: false
+            # Indicates whether to skip the init phase of the benchmark
+            init: false
+            # Indicates whether to skip the smart contract install phase of the benchmark
+            install: false
+            # Indicates whether to skip the test phase of the benchmark
+            test: false
+            # Indicates whether to skip the end command script in the network configuration file, if provided
+            end: false
+        # Only options
+        only:
+            # Indicates whether to only perform the start command script in the network configuration file, if provided
+            start: false
+            # Indicates whether to only perform the init phase of the benchmark
+            init: false
+            # Indicates whether to only perform the smart contract install phase of the benchmark
+            install: false
+            # Indicates whether to only perform the test phase of the benchmark
+            test: false
+            # Indicates whether to only perform the end command script in the network configuration file, if provided
+            end: false
+
+    # Configurations related to the Fabric CCP adapter
+    fabric:
+        # Sets the sleep behaviors after different init actions
+        sleepafter:
+            # The time in milliseconds to sleep after creating the channels (if created channels at all)
+            createchannel: 5000
+            # The time in milliseconds to sleep after joining the channels (if joined channels at all)
+            joinchannel: 5000
+            # The time in milliseconds to sleep after instantiated the chaincodes (if instantiated chaincodes at all)
+            instantiatechaincode: 5000
+        # Enables extra verification steps during the transaction proposal phase
+        verify:
+            # Indicates whether to verify the identity of the endorsers and their signatures for each proposal response after endorsing a transaction.
+            # Note, that this is a CPU intensive step, use it with caution
+            proposalresponse: false
+            # Indicates whether to verify that the read-write sets returned by the endorsers match
+            readwritesets: true
+        # Contains client-side timeouts related to the initialization part of the adapter
+        timeout:
+            # Timeout in milliseconds for the endorsement part of a chaincode instantiation
+            chaincodeinstantiate: 300000
+            # Timeout in milliseconds for receiving the event about the result of a chaincode instantiation
+            chaincodeinstantiateevent: 100000
+            # The default timeout in milliseconds to use for invoking or querying transactions (applied for the entire life-cycle)
+            invokeorquery: 60000
+        # Determines how automatic load balancing is applied if the client callback module doesn’t provide explicit targets.
+        # Use the value 'client' to perform client-based load balancing, meaning that each client process will have fix target peers and target orderer.
+        # Use the value 'tx' to perform transaction-based load balancing, meaning that the peer and orderer targets change for every submitted transaction or query.
+        loadbalancing: tx
+        # Indicates whether to temporarily set the GOPATH environment variable to the Caliper root directory
+        overwritegopath: true
+        # Determines the reported commit time of a transaction based on the given percentage of event sources
+        latencythreshold: 1.0
+        # Indicates whether to count queries as workload, i.e., whether the generated report should include them
+        countqueryasload: true
+        # Settings for the Fabric Gateway API
+        gateway:
+            usegateway: false
+            # Indicates whether to use the localhost default within the Fabric Gateway API
+            gatewaylocalhost: true
+            # Indicates whether to use the Fabric discovery mechanism (via Gateway API)
+            discovery: false
+            # Which event strategy to use
+            eventstrategy: msp_any
+            # Which query strategy to use
+            querystrategy: msp_round_robin
+
+
+    sawtooth:
