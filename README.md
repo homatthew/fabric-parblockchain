@@ -12,8 +12,9 @@ This project is a based on the  original fabric repository which will include op
   * Endorserer read-write set short term memory
   * Orderers abort WW and reorders WR conflicts
 
-# Important Links
+# Tutorials
 1. Official Starting Guide - https://hyperledger-fabric.readthedocs.io/en/release-1.4/getting_started.html
+2. Commercial paper tutorial - https://hyperledger-fabric.readthedocs.io/en/release-1.4/tutorial/commercial_paper.html
 
 # Installation 
 1. Install all prerequisites listed at https://hyperledger-fabric.readthedocs.io/en/release-1.4/prereqs.html
