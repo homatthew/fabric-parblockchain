@@ -28,7 +28,7 @@ This project is a based on the  original fabric repository which will include op
   - Paper: https://bigdata.uni-saarland.de/publications/mod485-sharma.pdf
   - Code: https://github.com/sh-ankur/fabric
   - Benchmark: https://github.com/sh-ankur/benchmark-fabric
-- FastFabric (UWaterloo)
+- FastFabric: Scaling Hyperledger Fabric to 20,000 Transactions per Second (UWaterloo)
   - Paper: https://arxiv.org/pdf/1901.00910.pdf
   - Code/Benchmark: https://github.com/cgorenflo/fabric
 - Scaling Hyperledger Fabric Using Pipelined Execution and Sparse Peers (IBM India)
