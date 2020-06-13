@@ -22,6 +22,7 @@ This project is a based on the  original fabric repository which will include op
 
 # Compilation
 - The Fabric docker images can be built by running `make` in the root directory of `$GOPATH/src/github.com/hyperledger/fabric`
+ - Further information about how to run unit-tests and build https://hyperledger-fabric.readthedocs.io/en/release-1.4/dev-setup/build.html
 
 # Other Related Work / Papers
 - Blurring the Lines between Blockchains and Database Systems: the Case of Hyperledger Fabric (Saarland University)
