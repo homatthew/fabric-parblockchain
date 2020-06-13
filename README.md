@@ -1,7 +1,9 @@
 # Hyperledger-parblockchain
 The unique features of blockchain such as transparency, provenance, fault tolerance, and authenticity are used by many systems to deploy a wide range of distributed applications such as supply chain management and healthcare in a permissioned setting. Distributed applications, however, require high performance in terms of throughput and latency. The performance aspect of permission blockchains has been addressed in several studies such as Hyperledger Fabric and ParBlockchain. The goal of this project is to improve the performance of Hyperledger Fabric using the technique that has been presented in ParBlockchain permissioned blockchain.
 
-Note: This project is built on top of Fabric v1.4.7
+Note: This project is built on top of Fabric v1.4.7 
+
+This project is a based on the  original fabric repository which will include optimizations based on early aborts to improve throughput.
 
 # Code Structure
 * build-network - Scripts to start and stop network locally
@@ -35,3 +37,5 @@ Note: This project is built on top of Fabric v1.4.7
   - Benchmark: https://github.com/thakkarparth007/fabric-load-gen
 
 
+# License
+Hyperledger Project source code files are made available under the Apache License, Version 2.0 (Apache-2.0), located in the LICENSE file. Hyperledger Project documentation files are made available under the Creative Commons Attribution 4.0 International License (CC-BY-4.0), available at http://creativecommons.org/licenses/by/4.0/.
