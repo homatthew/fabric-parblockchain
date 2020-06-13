@@ -6,7 +6,7 @@ Note: This project is built on top of Fabric v1.4.7
 # Code Structure
 * build-network - Scripts to start and stop network locally
 * benchmarks - Contains Caliper v0.3.1 configuration and other benchmark scripts
-* Fabric - Modified Fabric 1.4.7 implementing the following features:
+* fabric - Modified Fabric 1.4.7 implementing the following features:
   * Endorserer read-write set short term memory
   * Orderers abort WW and reorders WR conflicts
 
