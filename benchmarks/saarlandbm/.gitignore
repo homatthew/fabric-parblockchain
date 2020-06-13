@@ -1,0 +1,5 @@
+src/hfc-key-store
+node_modules
+**/channel-artifacts/channel*
+**/channel-artifacts/msp
+**/configtx.yaml

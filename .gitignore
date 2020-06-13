@@ -1,8 +1,8 @@
 benchmarks/caliper/node_modules
-benchmarks/saarland-benchmark/node_modules
-benchmarks/saarland-benchmark/src/hfc-key-store
-benchmarks/saarland-benchmark/src/**/channel-artifacts/channel*
-benchmarks/saarland-benchmark/src/**/channel-artifacts/msp
-benchmarks/saarland-benchmark/src/**/configtx.yaml
+benchmarks/saarlandbm/node_modules
+benchmarks/saarlandbm/src/hfc-key-store
+benchmarks/saarlandbm/src/**/channel-artifacts/channel*
+benchmarks/saarlandbm/src/**/channel-artifacts/msp
+benchmarks/saarlandbm/src/**/configtx.yaml
 
 
