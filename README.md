@@ -2,8 +2,8 @@
 Research Project for UCSB Distributed Systems Lab built during Spring 2020
 This project is built on top of Hyperledger Fabric v1.4.7 which includes throughput optimizations based on early aborts to improve throughput.
 
-## Project Description:
-The unique features of blockchain such as transparency, provenance, fault tolerance, and authenticity are used by many systems to deploy a wide range of distributed applications such as supply chain management and healthcare in a permissioned setting. Distributed applications, however, require high performance in terms of throughput and latency. The performance aspect of permission blockchains has been addressed in several studies such as Hyperledger Fabric and ParBlockchain. The goal of this project is to improve the performance of Hyperledger Fabric using the technique that has been presented in ParBlockchain permissioned blockchain.
+- ### Project Description:
+  The unique features of blockchain such as transparency, provenance, fault tolerance, and authenticity are used by many systems to deploy a wide range of distributed applications such as supply chain management and healthcare in a permissioned setting. Distributed applications, however, require high performance in terms of throughput and latency. The performance aspect of permission blockchains has been addressed in several studies such as Hyperledger Fabric and ParBlockchain. The goal of this project is to improve the performance of Hyperledger Fabric using the technique that has been presented in ParBlockchain permissioned blockchain.
 
 ## Code Structure
 * `fabric-sdk-node` - Modified Fabric-node-sdk
@@ -12,6 +12,7 @@ The unique features of blockchain such as transparency, provenance, fault tolera
 * `fabric` - Modified Fabric 1.4.7 implementing the following features:
   * Endorserer read-write set short term memory
   * Orderers abort WW and reorders WR conflicts
+  * __Note: This should folder chould contain repo  `homatthew/fabric` on branch `earlyAbort`__ 
   
 ## Important Files in fabric
 * Endorser `fabric/core/endorser/`
