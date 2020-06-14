@@ -1,0 +1,4 @@
+[submodule "fabric"]
+	path = fabric
+	url = https://github.com/homatthew/fabric.git
+	branch = earlyAbort
