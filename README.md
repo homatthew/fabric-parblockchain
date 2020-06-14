@@ -6,14 +6,14 @@ This project is built on top of Hyperledger Fabric v1.4.7 which includes through
 The unique features of blockchain such as transparency, provenance, fault tolerance, and authenticity are used by many systems to deploy a wide range of distributed applications such as supply chain management and healthcare in a permissioned setting. Distributed applications, however, require high performance in terms of throughput and latency. The performance aspect of permission blockchains has been addressed in several studies such as Hyperledger Fabric and ParBlockchain. The goal of this project is to improve the performance of Hyperledger Fabric using the technique that has been presented in ParBlockchain permissioned blockchain.
 
 ## Code Structure
-* fabric-sdk-node - Modified Fabric-node-sdk
-* build-network - Scripts to start and stop network locally
-* benchmarks - Contains Caliper v0.3.1 configuration and other benchmark scripts
-* fabric - Modified Fabric 1.4.7 implementing the following features:
+* `fabric-sdk-node` - Modified Fabric-node-sdk
+* `build-network` - Scripts to start and stop network locally
+* `benchmarks` - Contains Caliper v0.3.1 configuration and other benchmark scripts
+* `fabric` - Modified Fabric 1.4.7 implementing the following features:
   * Endorserer read-write set short term memory
   * Orderers abort WW and reorders WR conflicts
   
-## Important Files To Edit
+## Important Files in fabric
 * Endorser `fabric/core/endorser/`
   * `endorser.go` - Add memory for RW set. Current implementation has RW-sets expire after 2 minutes. 
     * SimulateProposal() - Add write-set to temporary memory after simulation
@@ -38,16 +38,18 @@ The unique features of blockchain such as transparency, provenance, fault tolera
 ## Fabric Tutorials
 1. Official Starting Guide - https://hyperledger-fabric.readthedocs.io/en/release-1.4/getting_started.html
 2. Commercial paper tutorial - https://hyperledger-fabric.readthedocs.io/en/release-1.4/tutorial/commercial_paper.html
+3. Caliper Installation - https://hyperledger.github.io/caliper/v0.3.1/installing-caliper
 
-# Installation 
+## Installation 
 1. Install all prerequisites listed at https://hyperledger-fabric.readthedocs.io/en/release-1.4/prereqs.html
-2. Copy contents from `fabric` directory to `$GOPATH/src/github.com/hyperledger/fabric`
-3. Run the tests using the scripts and README instructions inside Benchmark
+2. Copy contents from `fabric` repo/submodule to `$GOPATH/src/github.com/hyperledger/fabric`
+4. Run the tests using the scripts and README instructions inside Benchmark
 
 ## Compilation
-- The Fabric docker images can be built by running `make` in the root directory of `$GOPATH/src/github.com/hyperledger/fabric`
+- The Fabric docker images can be built by running `make dist-clean all` in the root directory of `$GOPATH/src/github.com/hyperledger/fabric`
  - Further information about how to run unit-tests and build https://hyperledger-fabric.readthedocs.io/en/release-1.4/dev-setup/build.html
-
+ - When adding new external packages to the project, copy the package to `fabric/vendor` and manually add entry to the `Gopkg.toml`.
+  
 ## Other Related Work / Papers
 - Blurring the Lines between Blockchains and Database Systems: the Case of Hyperledger Fabric (Saarland University)
   - Paper: https://bigdata.uni-saarland.de/publications/mod485-sharma.pdf
