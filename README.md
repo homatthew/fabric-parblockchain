@@ -50,6 +50,16 @@ This project is built on top of Hyperledger Fabric v1.4.7 which includes through
 - The Fabric docker images can be built by running `make dist-clean all` in the root directory of `$GOPATH/src/github.com/hyperledger/fabric`
  - Further information about how to run unit-tests and build https://hyperledger-fabric.readthedocs.io/en/release-1.4/dev-setup/build.html
  - When adding new external packages to the project, copy the package to `fabric/vendor` and manually add entry to the `Gopkg.toml`.
+
+## Benchmark Choice
+* My results are  done using Hyperledger  Caliper
+* Other papers tend to build their own benchmarking tools due to lacking features of caliper. Some of these features have since been added such as:
+  * enabling long-term benchmarks
+  * charting capabilities
+  * repeatability, i.e., it can be re-executed in a deterministic way whenever necessary
+* __However__, Caliper only includes by default simpler rate controllers (Uniform, linear, deterministic)
+* Future Work: Implement custom controller that does poisson or other distribution
+
   
 ## Other Related Work / Papers
 - Blurring the Lines between Blockchains and Database Systems: the Case of Hyperledger Fabric (Saarland University)

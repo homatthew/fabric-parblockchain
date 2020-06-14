@@ -2,3 +2,7 @@
 	path = fabric
 	url = https://github.com/homatthew/fabric.git
 	branch = earlyAbort
+[submodule "benchmarks/caliper/caliper-benchmarks"]
+	path = benchmarks/caliper/caliper-benchmarks
+	url = https://github.com/hyperledger/caliper-benchmarks.git
+	branch = master
