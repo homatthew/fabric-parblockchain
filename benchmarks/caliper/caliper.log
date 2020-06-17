@@ -111,3 +111,19 @@
 2020.06.15-05:12:29.782[32m info [39m [caliper] [bind] 	Binding for fabric@1.4.7. This might take some time...
 2020.06.15-05:12:29.783[32m info [39m [caliper] [bind] 	Using working directory: /Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper
 2020.06.15-05:12:29.783[32m info [39m [caliper] [bind] 	Calling npm with: install fabric-client@1.4.7 fabric-protos@2.0.0-snapshot.1 fabric-network@1.4.7
+2020.06.17-01:08:09.379[90m debug[39m [caliper] [blockchain] 	Constructed a winston logger with the specified settings
+2020.06.17-01:08:10.609[32m info [39m [caliper] [bind] 	Binding for fabric@1.4.7. This might take some time...
+2020.06.17-01:08:10.611[32m info [39m [caliper] [bind] 	Using working directory: /Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper
+2020.06.17-01:08:10.612[32m info [39m [caliper] [bind] 	Calling npm with: install fabric-client@1.4.7 fabric-protos@2.0.0-snapshot.1 fabric-network@1.4.7
+2020.06.17-01:21:30.062[90m debug[39m [caliper] [blockchain] 	Constructed a winston logger with the specified settings
+2020.06.17-01:21:31.629[32m info [39m [caliper] [bind] 	Binding for fabric@1.4.7. This might take some time...
+2020.06.17-01:21:31.631[32m info [39m [caliper] [bind] 	Using working directory: /Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper
+2020.06.17-01:21:31.631[32m info [39m [caliper] [bind] 	Calling npm with: install fabric-client@1.4.7 fabric-protos@2.0.0-snapshot.1 fabric-network@1.4.7
+2020.06.17-01:36:36.120[90m debug[39m [caliper] [blockchain] 	Constructed a winston logger with the specified settings
+2020.06.17-01:36:37.264[32m info [39m [caliper] [bind] 	Binding for fabric@1.4.7. This might take some time...
+2020.06.17-01:36:37.265[32m info [39m [caliper] [bind] 	Using working directory: /Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper
+2020.06.17-01:36:37.266[32m info [39m [caliper] [bind] 	Calling npm with: install fabric-client@1.4.7 fabric-protos@2.0.0-snapshot.1 fabric-network@1.4.7
+2020.06.17-02:03:39.635[90m debug[39m [caliper] [blockchain] 	Constructed a winston logger with the specified settings
+2020.06.17-02:03:40.920[32m info [39m [caliper] [bind] 	Binding for fabric@1.4.7. This might take some time...
+2020.06.17-02:03:40.921[32m info [39m [caliper] [bind] 	Using working directory: /Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper
+2020.06.17-02:03:40.922[32m info [39m [caliper] [bind] 	Calling npm with: install fabric-client@1.4.7 fabric-protos@2.0.0-snapshot.1 fabric-network@1.4.7
