@@ -10,12 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hyperledger/caliper-cli": "^0.3.1",
+    "@hyperledger/caliper-cli": "^0.3.2",
     "fabric-ca-client": "^1.4.4",
     "fabric-client": "^1.4.8",
     "fabric-common": "^2.1.0",
     "fabric-network": "^1.4.8",
     "fabric-protos": "^2.0.0-snapshot.1",
-    "grpc": "^1.14.2"
+    "grpc": "^1.24.3"
   }
 }

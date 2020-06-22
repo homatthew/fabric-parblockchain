@@ -127,3 +127,60 @@
 2020.06.17-02:03:40.920[32m info [39m [caliper] [bind] 	Binding for fabric@1.4.7. This might take some time...
 2020.06.17-02:03:40.921[32m info [39m [caliper] [bind] 	Using working directory: /Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper
 2020.06.17-02:03:40.922[32m info [39m [caliper] [bind] 	Calling npm with: install fabric-client@1.4.7 fabric-protos@2.0.0-snapshot.1 fabric-network@1.4.7
+2020.06.17-15:11:09.396[90m debug[39m [caliper] [blockchain] 	Constructed a winston logger with the specified settings
+2020.06.17-15:11:09.681[32m info [39m [caliper] [bind] 	Binding for fabric@1.4.8. This might take some time...
+2020.06.17-15:11:09.682[32m info [39m [caliper] [bind] 	Using working directory: /Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper
+2020.06.17-15:11:09.682[32m info [39m [caliper] [bind] 	Calling npm with: install fabric-client@1.4.8 fabric-protos@2.0.0-snapshot.1 fabric-network@1.4.8
+2020.06.17-15:19:10.703[90m debug[39m [caliper] [blockchain] 	Constructed a winston logger with the specified settings
+2020.06.17-15:19:10.911[33m warn [39m [caliper] [bind] 	Working directory not specified. Using "/Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper"
+2020.06.17-15:19:10.912[32m info [39m [caliper] [bind] 	Binding for fabric@1.4.8. This might take some time...
+2020.06.17-15:19:10.913[32m info [39m [caliper] [bind] 	Using working directory: /Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper
+2020.06.17-15:19:10.913[32m info [39m [caliper] [bind] 	Calling npm with: install fabric-client@1.4.8 fabric-protos@2.0.0-snapshot.1 fabric-network@1.4.8
+2020.06.17-15:21:55.981[90m debug[39m [caliper] [blockchain] 	Constructed a winston logger with the specified settings
+2020.06.17-15:21:56.182[33m warn [39m [caliper] [bind] 	Working directory not specified. Using "/Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper"
+2020.06.17-15:21:56.184[32m info [39m [caliper] [bind] 	Binding for fabric@1.4.8. This might take some time...
+2020.06.17-15:21:56.184[32m info [39m [caliper] [bind] 	Using working directory: /Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper
+2020.06.17-15:21:56.184[32m info [39m [caliper] [bind] 	Calling npm with: install fabric-client@1.4.8 fabric-protos@2.0.0-snapshot.1 fabric-network@1.4.8
+2020.06.17-15:22:09.092[31m error[39m [caliper] [bind] 	Failed to execute "npm" with return code 1.
+2020.06.17-15:23:02.509[90m debug[39m [caliper] [blockchain] 	Constructed a winston logger with the specified settings
+2020.06.17-15:23:02.764[32m info [39m [caliper] [bind] 	Binding for fabric@1.4.8. This might take some time...
+2020.06.17-15:23:02.765[32m info [39m [caliper] [bind] 	Using working directory: /Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper
+2020.06.17-15:23:02.765[32m info [39m [caliper] [bind] 	Calling npm with: install fabric-client@1.4.8 fabric-protos@2.0.0-snapshot.1 fabric-network@1.4.8
+2020.06.17-15:23:37.208[90m debug[39m [caliper] [blockchain] 	Constructed a winston logger with the specified settings
+2020.06.17-15:23:37.460[33m warn [39m [caliper] [bind] 	Working directory not specified. Using "/Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper"
+2020.06.17-15:23:37.462[32m info [39m [caliper] [bind] 	Binding for fabric@1.4.8. This might take some time...
+2020.06.17-15:23:37.463[32m info [39m [caliper] [bind] 	Using working directory: /Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper
+2020.06.17-15:23:37.463[32m info [39m [caliper] [bind] 	Calling npm with: install fabric-client@1.4.8 fabric-protos@2.0.0-snapshot.1 fabric-network@1.4.8
+2020.06.17-15:25:07.865[90m debug[39m [caliper] [blockchain] 	Constructed a winston logger with the specified settings
+2020.06.17-15:25:08.110[32m info [39m [caliper] [bind] 	Binding for fabric@1.4.8. This might take some time...
+2020.06.17-15:25:08.111[32m info [39m [caliper] [bind] 	Using working directory: /Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper
+2020.06.17-15:25:08.111[32m info [39m [caliper] [bind] 	Calling npm with: install fabric-client@1.4.8 fabric-protos@2.0.0-snapshot.1 fabric-network@1.4.8
+2020.06.17-15:25:33.558[90m debug[39m [caliper] [blockchain] 	Constructed a winston logger with the specified settings
+2020.06.17-15:25:33.808[33m warn [39m [caliper] [bind] 	Working directory not specified. Using "/Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper"
+2020.06.17-15:25:33.809[32m info [39m [caliper] [bind] 	Binding for fabric@1.4.8. This might take some time...
+2020.06.17-15:25:33.809[32m info [39m [caliper] [bind] 	Using working directory: /Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper
+2020.06.17-15:25:33.810[32m info [39m [caliper] [bind] 	Calling npm with: install fabric-client@1.4.8 fabric-protos@2.0.0-snapshot.1 fabric-network@1.4.8
+2020.06.17-15:26:16.131[90m debug[39m [caliper] [blockchain] 	Constructed a winston logger with the specified settings
+2020.06.17-15:26:16.399[32m info [39m [caliper] [bind] 	Binding for fabric@1.4.8. This might take some time...
+2020.06.17-15:26:16.400[32m info [39m [caliper] [bind] 	Using working directory: /Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper
+2020.06.17-15:26:16.400[32m info [39m [caliper] [bind] 	Calling npm with: install fabric-client@1.4.8 fabric-protos@2.0.0-snapshot.1 fabric-network@1.4.8
+2020.06.17-15:26:36.350[90m debug[39m [caliper] [blockchain] 	Constructed a winston logger with the specified settings
+2020.06.17-15:26:36.633[33m warn [39m [caliper] [bind] 	Working directory not specified. Using "/Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper"
+2020.06.17-15:26:36.634[32m info [39m [caliper] [bind] 	Binding for fabric@1.4.8. This might take some time...
+2020.06.17-15:26:36.634[32m info [39m [caliper] [bind] 	Using working directory: /Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper
+2020.06.17-15:26:36.635[32m info [39m [caliper] [bind] 	Calling npm with: install fabric-client@1.4.8 fabric-protos@2.0.0-snapshot.1 fabric-network@1.4.8
+2020.06.17-15:28:59.683[90m debug[39m [caliper] [blockchain] 	Constructed a winston logger with the specified settings
+2020.06.17-15:28:59.977[33m warn [39m [caliper] [bind] 	Working directory not specified. Using "/Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper"
+2020.06.17-15:28:59.979[32m info [39m [caliper] [bind] 	Binding for fabric@1.4.8. This might take some time...
+2020.06.17-15:28:59.979[32m info [39m [caliper] [bind] 	Using working directory: /Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper
+2020.06.17-15:28:59.979[32m info [39m [caliper] [bind] 	Calling npm with: install fabric-client@1.4.8 fabric-protos@2.0.0-snapshot.1 fabric-network@1.4.8
+2020.06.17-15:34:06.739[90m debug[39m [caliper] [blockchain] 	Constructed a winston logger with the specified settings
+2020.06.17-15:34:07.006[33m warn [39m [caliper] [bind] 	Working directory not specified. Using "/Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper"
+2020.06.17-15:34:07.007[32m info [39m [caliper] [bind] 	Binding for fabric@1.4.8. This might take some time...
+2020.06.17-15:34:07.008[32m info [39m [caliper] [bind] 	Using working directory: /Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper
+2020.06.17-15:34:07.008[32m info [39m [caliper] [bind] 	Calling npm with: install fabric-client@1.4.8 fabric-protos@2.0.0-snapshot.1 fabric-network@1.4.8
+2020.06.17-15:43:06.302[90m debug[39m [caliper] [blockchain] 	Constructed a winston logger with the specified settings
+2020.06.17-15:43:06.604[33m warn [39m [caliper] [bind] 	Working directory not specified. Using "/Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper"
+2020.06.17-15:43:06.605[32m info [39m [caliper] [bind] 	Binding for fabric@1.4.8. This might take some time...
+2020.06.17-15:43:06.606[32m info [39m [caliper] [bind] 	Using working directory: /Users/matthew/Documents/research/fabric-parblockchain/benchmarks/caliper
+2020.06.17-15:43:06.606[32m info [39m [caliper] [bind] 	Calling npm with: install fabric-client@1.4.8 fabric-protos@2.0.0-snapshot.1 fabric-network@1.4.8

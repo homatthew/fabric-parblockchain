@@ -1,3 +1,5 @@
+npx caliper bind \
+    --caliper-bind-sut fabric:1.4.8
 npx caliper launch master \
   --caliper-bind-sut fabric:1.4.8 \
   --caliper-benchconfig benchmarks/ucsb-smallbank/config.yaml \
